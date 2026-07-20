@@ -1,0 +1,249 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(46, 47, 66, 0.4);
+
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 300ms ease-in 200ms;
+    transition-property: opacity, visibility;
+}
+
+.backdrop.is-open {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal {
+    width: 408px;
+    background-color: #FCFCFC;
+    padding: 72px 24px 24px;
+    border-radius: 4px;
+    box-shadow:
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.20);
+
+    position: relative;
+}
+
+.modal-button {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #E7E9FC;
+    border: 1px solid #2E2F42;
+
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+    background-color: #404BBF;
+    outline: none;
+}
+
+.modal-button-icon {
+    fill: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover .modal-button-icon,
+.modal-button:focus .modal-button-icon {
+    fill: #FFFFFF;
+}
+
+.modal-title {
+    color: #2E2F42;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.modal-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.modal-form-label {
+    color: #8E8F99;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+
+.modal-form-field+.modal-form-field {
+    margin-top: 8px;
+}
+
+.modal-form-input-wrapper {
+    position: relative;
+}
+
+.modal-form-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 38px;
+    padding-right: 8px;
+    border-radius: 4px;
+
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:focus {
+    border-color: #4D5AE5;
+    outline: none;
+}
+
+.modal-form-icon {
+    position: absolute;
+    left: 16px;
+    bottom: 8px;
+    fill: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:focus+.modal-form-icon {
+    fill: #4D5AE5;
+}
+
+.modal-form-textarea {
+    width: 100%;
+    height: 120px;
+    padding: 8px 8px 8px 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    resize: none;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+
+    color: #2E2F42;
+}
+
+.modal-form-textarea:focus {
+    border-color: #4D5AE5;
+    outline: transparent;
+}
+
+.modal-form-textarea::placeholder {
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-agreement {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.modal-input-agreement {
+    border-radius: 2px;
+    border: 1px solid #2E2F42;
+}
+
+.modal-form-checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.modal-checkbox-icon {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-mark {
+    opacity: 0;
+}
+
+.modal-input-agreement:checked+.modal-form-checkbox .modal-checkbox-icon .check-mark {
+    opacity: 1;
+    fill: #F4F4FD;
+}
+
+.modal-input-agreement:checked+.modal-form-checkbox .modal-checkbox-icon {
+    background-color: #404BBF;
+    border: 1px solid #404BBF;
+}
+
+.agreement-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.privacy-link {
+    color: #4D5AE5;
+    text-decoration: underline;
+}
+
+.modal-form-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    width: 169px;
+    height: 56px;
+    border-radius: 4px;
+
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+}
+
+.modal-form-button:hover,
+.modal-form-button:focus {
+    background-color: #404BBF;
+}

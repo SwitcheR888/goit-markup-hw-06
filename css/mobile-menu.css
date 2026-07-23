@@ -4,10 +4,16 @@
     right: 0;
     bottom: 0;
     left: 0;
+
+    display: flex;
+    flex-direction: column;
+
     padding: 72px 16px 40px 16px;
 
     background-color: #FFFFFF;
 }
+
+.mobile-menu.is-open {}
 
 .mobile-menu-btn-close {
     position: absolute;
@@ -28,46 +34,112 @@
     border: 1px solid #2E2F42;
 
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-btn-close:hover,
 .mobile-menu-btn-close:focus {
     background-color: #404BBF;
     outline: none;
+
 }
 
 
 .mobile-menu-btn-icon {
     fill: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-btn-close:hover .mobile-menu-btn-icon,
 .mobile-menu-btn-close:focus .mobile-menu-btn-icon {
     fill: #FFFFFF;
+
 }
 
 .mobile-menu-nav {}
 
-.mobile-menu-list {}
+.mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 
 .mobile-menu-item {}
 
-.mobile-menu-link {}
+.mobile-menu-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
 
-.current {}
+    color: #2E2F42;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.mobile-menu-address {}
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+    color: #404BBF;
+}
 
-.mobile-menu-address-list {}
+.mobile-menu-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-top: auto;
+}
+
+.mobile-menu-address {
+    font-style: normal;
+}
+
+.mobile-menu-address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 
 .mobile-menu-address-item {}
 
-.mobile-menu-contacts-link {}
+.mobile-menu-contacts-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.20;
+    letter-spacing: 0.02em;
 
-.mobile-menu-social-list {}
+    color: #434455;
 
-.mobile-menu-social-item {}
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.mobile-menu-social-link {}
+.mobile-menu-contacts-link:hover,
+.mobile-menu-contacts-link:focus {
+    color: #404BBF;
+}
 
-.mobile-menu-social-icon {}
+.mobile-menu-social-list {
+    display: flex;
+    gap: 40px;
+}
+
+.mobile-menu-social-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background-color: #4D5AE5;
+
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-social-link:hover,
+.mobile-menu-social-link:focus {
+    background-color: #404BBF;
+}
+
+.mobile-menu-social-icon {
+    fill: #F4F4FD;
+}

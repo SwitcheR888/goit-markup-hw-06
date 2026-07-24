@@ -1,7 +1,8 @@
+/*=====Mobile version=====*/
 .team {
+    padding: 96px 0;
+
     background-color: #F4F4FD;
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .team-title {
@@ -16,62 +17,93 @@
 
 .team-list {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 72px;
 }
 
 .team-item {
-    background-color: #FFFFFF;
-    border-radius: 0 0 4px 4px;
+    width: 264px;
+    margin: 0 auto;
     box-shadow:
         0px 2px 1px 0px rgba(46, 47, 66, 0.08),
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px;
 }
 
-.team-info {
-    text-align: center;
-    padding: 32px 16px;
-}
 
-.team-name {
-    color: #2E2F42;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-}
 
-.team-job {
-    color: #434455;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
 
-.team-social-list {
-    display: flex;
-    gap: 24px;
-    margin-top: 8px;
-}
 
-.team-social-link {
-    display: flex;
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
-    color: #F4F4FD;
-    background-color: #4D5AE5;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+/*=====Tablet version=====*/
+@media screen and (min-width: 768px) {}
 
-.team-social-link:hover,
-.team-social-link:focus {
-    background-color: #404BBF;
-}
 
-.team-social-icon {
-    fill: #F4F4FD;
+
+
+
+
+/*=====Desktop version=====*/
+@media screen and (min-width: 1158px) {
+    .team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .team-title {}
+
+    .team-list {
+        gap: 24px;
+    }
+
+    .team-item {}
+
+    .team-info {
+        text-align: center;
+        padding: 32px 16px;
+    }
+
+    .team-name {
+        color: #2E2F42;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+    }
+
+    .team-job {
+        color: #434455;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
+    .team-social-list {
+        display: flex;
+        gap: 24px;
+        margin-top: 8px;
+    }
+
+    .team-social-link {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        color: #F4F4FD;
+        background-color: #4D5AE5;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .team-social-link:hover,
+    .team-social-link:focus {
+        background-color: #404BBF;
+    }
+
+    .team-social-icon {
+        fill: #F4F4FD;
+    }
 }

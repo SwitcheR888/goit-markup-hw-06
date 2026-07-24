@@ -1,53 +1,82 @@
+/*=====Mobile version=====*/
 .features {
-    padding: 120px 0;
-}
-
-.features-title {
-    color: #2E2F42;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
+    padding: 96px 0;
 }
 
 .features-list {
     display: flex;
-    gap: 24px;
-}
-
-.features-item {
-    flex-basis: calc((100% - 3 * 24px) / 4);
-}
-
-.features-icon-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 264px;
-    height: 112px;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    background-color: #f4f4fd;
-    margin-bottom: 8px;
-}
-
-.features-icon {
-    fill: #2e2f42;
-
+    flex-direction: column;
+    gap: 72px;
 }
 
 .features-subtitle {
-    color: #2E2F42;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
     margin-bottom: 8px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+
+    color: #2E2F42;
+}
+
+.features-icon-wrapper {
+    display: none;
 }
 
 .features-text {
-    color: #434455;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
+    color: #434455;
+}
+
+
+/*=====Tablet version=====*/
+@media screen and (min-width: 768px) {}
+
+
+
+/*=====Desktop version=====*/
+@media screen and (min-width: 1158px) {
+    .features {
+        padding: 120px 0;
+    }
+
+    .features-list {
+        gap: 24px;
+    }
+
+    .features-item {
+        flex-basis: calc((100% - 3 * 24px) / 4);
+    }
+
+    .features-icon-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 264px;
+        height: 112px;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        background-color: #f4f4fd;
+        margin-bottom: 8px;
+    }
+
+    .features-icon {
+        fill: #2e2f42;
+
+    }
+
+    .features-subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .features-text {
+        font-weight: 400;
+    }
 }

@@ -1,4 +1,10 @@
 /*=====Mobile version=====*/
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo {
     color: #4D5AE5;
     font-family: "Raleway", sans-serif;
@@ -7,10 +13,30 @@
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    padding: 16px 0;
 }
 
 .logo-part {
     color: #2E2F42;
+}
+
+.burger-menu-btn {
+    width: 24px;
+    height: 24px;
+
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+}
+
+.nav {
+    display: none;
+}
+
+.address {
+    display: none;
 }
 
 /*=====Tablet version=====*/
@@ -20,9 +46,8 @@
         border-bottom: 1px solid #E7E9FC;
     }
 
-    .header .container {
-        display: flex;
-        align-items: center;
+    .nav {
+        display: block;
     }
 
     .nav-list {
@@ -92,7 +117,6 @@
 
     .address-list {
         flex-direction: row;
-        gap: 40px;
     }
 
     .contacts-link:hover,

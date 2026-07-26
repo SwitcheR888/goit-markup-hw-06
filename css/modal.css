@@ -1,3 +1,4 @@
+/*=====Mobile version=====*/
 .backdrop {
     position: fixed;
     top: 0;
@@ -24,9 +25,9 @@
 }
 
 .modal {
-    width: 408px;
+    width: 288px;
     background-color: #FCFCFC;
-    padding: 72px 24px 24px;
+    padding: 72px 16px 24px;
     border-radius: 4px;
     box-shadow:
         0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -160,7 +161,7 @@
 }
 
 .modal-agreement {
-    width: 100%;
+
     margin-bottom: 24px;
 }
 
@@ -172,10 +173,8 @@
 .modal-form-checkbox {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
     gap: 8px;
     margin-top: 16px;
-    margin-bottom: 0px;
     cursor: pointer;
 }
 
@@ -247,3 +246,21 @@
 .modal-form-button:focus {
     background-color: #404BBF;
 }
+
+/*=====Tablet version=====*/
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 408px;
+        padding: 72px 24px 24px;
+    }
+}
+
+
+
+
+
+
+
+
+/*=====Desktop version=====*/
+@media screen and (min-width: 1158px) {}

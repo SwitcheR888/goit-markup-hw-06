@@ -40,7 +40,30 @@
 
 
 /*=====Tablet version=====*/
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .features-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+
+    .features-item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+
+    .features-subtitle {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+
+        text-align: left;
+    }
+
+    .features-text {
+        width: 356px;
+    }
+}
 
 
 
@@ -50,38 +73,22 @@
         padding: 120px 0;
     }
 
-    .features-list {
-        gap: 24px;
-    }
 
-    .features-item {
-        flex-basis: calc((100% - 3 * 24px) / 4);
+    .features-icon {
+        fill: #2e2f42;
     }
 
     .features-icon-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
+
         width: 264px;
         height: 112px;
+
         border: 1px solid #8e8f99;
         border-radius: 4px;
         background-color: #f4f4fd;
         margin-bottom: 8px;
-    }
-
-    .features-icon {
-        fill: #2e2f42;
-
-    }
-
-    .features-subtitle {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-    }
-
-    .features-text {
-        font-weight: 400;
     }
 }

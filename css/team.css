@@ -6,11 +6,13 @@
 }
 
 .team-title {
-    color: #2E2F42;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
+
+    color: #2E2F42;
+
     text-align: center;
     margin-bottom: 72px;
 }
@@ -89,7 +91,18 @@
 
 
 /*=====Tablet version=====*/
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 64px 24px;
+    }
+
+    .team-item {
+        margin: 0;
+    }
+}
 
 
 

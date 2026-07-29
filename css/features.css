@@ -48,7 +48,7 @@
     }
 
     .features-item {
-        flex-basis: calc((100% - 24px) / 2);
+        width: 348px;
     }
 
     .features-subtitle {

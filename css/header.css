@@ -124,12 +124,18 @@
 
 /*=====Desktop version=====*/
 @media screen and (min-width: 1158px) {
+    .header .container {
+        justify-content: flex-start;
+        gap: 0;
+    }
+
     .address-list {
         flex-direction: row;
     }
 
     .logo {
-        margin-left: 140px;
+        /*margin-left: 140px;
+        /*ПОД ВОПРОСОМ*/
     }
 
     .address-item {}

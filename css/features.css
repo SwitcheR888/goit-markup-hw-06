@@ -71,7 +71,6 @@
         padding: 120px 0;
     }
 
-
     .features-icon {
         fill: #2e2f42;
     }
@@ -88,5 +87,30 @@
         border-radius: 4px;
         background-color: #f4f4fd;
         margin-bottom: 8px;
+    }
+
+    .features-subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.20;
+        letter-spacing: 0.02em;
+    }
+
+    .features-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+
+        width: 264px;
+    }
+
+    .features-list {
+        gap: 24px;
+        flex-wrap: nowrap;
+    }
+
+    .features-item {
+        flex-basis: calc((100% - 3 * 24px) / 4);
     }
 }

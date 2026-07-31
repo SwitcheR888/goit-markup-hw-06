@@ -64,8 +64,6 @@
     fill: #FFFFFF;
 }
 
-.mobile-menu-nav {}
-
 .mobile-menu-list {
     display: flex;
     flex-direction: column;
@@ -114,35 +112,12 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu-contacts-link:hover,
-.mobile-menu-contacts-link:focus {
-    color: #404BBF;
-}
-
 .mobile-menu-social-list {
     display: flex;
     gap: 40px;
 }
 
-.mobile-menu-social-link {
-    display: flex;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-
-    background-color: #4D5AE5;
-
-    justify-content: center;
-    align-items: center;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .mobile-menu-social-link:hover,
 .mobile-menu-social-link:focus {
     background-color: #404BBF;
-}
-
-.mobile-menu-social-icon {
-    fill: #F4F4FD;
 }

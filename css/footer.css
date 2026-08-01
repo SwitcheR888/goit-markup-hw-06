@@ -20,7 +20,7 @@
 
 .footer .logo {
     display: inline-block;
-    gap: 16px;
+
 }
 
 .footer .logo-part {
@@ -185,7 +185,6 @@
         align-items: flex-start;
     }
 
-
     .footer-form {
         flex-direction: row;
         gap: 24px;
@@ -210,7 +209,6 @@
     }
 
     .footer .logo {
-        display: inline-block;
         margin-bottom: 16px;
         margin-right: 0;
     }
@@ -218,7 +216,4 @@
     .footer-social {
         margin-right: 83px;
     }
-
-
-
 }

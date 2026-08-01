@@ -48,7 +48,7 @@
     }
 
     .features-item {
-        width: 348px;
+        width: calc((100% - 24px) / 2);
     }
 
     .features-subtitle {
@@ -56,7 +56,7 @@
     }
 
     .features-text {
-        width: 356px;
+        width: 100%;
     }
 }
 

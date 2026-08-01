@@ -200,6 +200,8 @@
     .footer .container {
         flex-wrap: nowrap;
         align-items: baseline;
+
+        padding: 0 15px;
     }
 
     .footer {
@@ -207,6 +209,8 @@
     }
 
     .footer-left {
+        width: 264px;
+
         margin-right: 120px;
     }
 

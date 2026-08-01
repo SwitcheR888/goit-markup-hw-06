@@ -50,7 +50,7 @@
     }
 
     .logo {
-        margin-right: 76px;
+        margin-right: 120px;
     }
 
     .burger-menu-btn {
@@ -130,6 +130,10 @@
 @media screen and (min-width: 1158px) {
     .header .container {
         justify-content: flex-start;
+    }
+
+    .logo {
+        margin-right: 76px;
     }
 
     .address-list {

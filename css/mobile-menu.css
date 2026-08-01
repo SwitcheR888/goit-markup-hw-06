@@ -6,10 +6,6 @@
     height: 100%;
     padding: 72px 16px 40px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
     background-color: #FFFFFF;
 
     opacity: 0;
@@ -25,6 +21,14 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+}
+
+.mobile-menu-container {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .mobile-menu-btn-close {
@@ -110,6 +114,10 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mobile-menu-phone {
+    color: #4D5AE5;
+}
+
 .mobile-menu-social-list {
     display: flex;
     gap: 40px;
@@ -118,4 +126,10 @@
 .mobile-menu-social-link:hover,
 .mobile-menu-social-link:focus {
     background-color: #404BBF;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
 }

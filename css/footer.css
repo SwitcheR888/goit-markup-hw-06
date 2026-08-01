@@ -20,7 +20,7 @@
 
 .footer .logo {
     display: inline-block;
-
+    margin-bottom: 16px;
 }
 
 .footer .logo-part {
@@ -200,17 +200,14 @@
     .footer .container {
         flex-wrap: nowrap;
         align-items: baseline;
+    }
 
-        padding: 15px 0;
+    .footer {
+        padding: 100px 0;
     }
 
     .footer-left {
         margin-right: 120px;
-    }
-
-    .footer .logo {
-        margin-bottom: 16px;
-        margin-right: 0;
     }
 
     .footer-social {
